@@ -8,20 +8,6 @@ namespace MarsOct2020.StepDefinition
     [Binding]
     public sealed class SkillsStepDefinition
     {
-
-        //IWebDriver driver = new ChromeDriver();
-        //[BeforeScenario]
-        //public void Launchbrowser()
-        //{
-        //    driver = new ChromeDriver();
-        //}
-
-        //[AfterScenario]
-        //public void Dispose()
-        //{
-            // close the window and realease the memeory
-            //driver.Dispose();
-        //}
         [Given(@"I login to the website with valid credentials")]
         public void GivenILoginToTheWebsiteWithValidCredentials()
         {

@@ -12,20 +12,6 @@ namespace MarsOct2020.StepDefinition
     [Binding]
     public sealed class LanguageStepDefinition
     {
-        //IWebDriver driver = new ChromeDriver();
-        //IWebDriver driver;
-        //[BeforeScenario]
-        //public void Launchbrowser()
-        //{
-        //    driver = new ChromeDriver();
-        //}
-
-        //[AfterScenario]
-        //public void Dispose()
-        //{
-        //    // close the window and realease the memeory
-        //    driver.Dispose();
-        //}
 
         [Given(@"I login to website with valid login And password")]
         public void GivenILoginToWebsiteWithValidLoginAndPassword()

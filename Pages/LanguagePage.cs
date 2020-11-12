@@ -119,7 +119,7 @@ namespace MarsOct2020.Pages
             //click on update button
             IWebElement add2 = Driver.driver.FindElement(By.XPath("//div[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[2]/div/div[2]/div/table/tbody[1]/tr/td/div/span/input[1]"));
             add2.Click();
-            Thread.Sleep(1000);                                     //*[@id="account-profile-section"]/div/section[2]/div/div/div/div[3]/form/div[2]/div/div[2]/div/table/tbody[1]/tr/td/div/span/input[1]
+            Thread.Sleep(1000);                                    
         }
 
         internal void LanAdded()
@@ -158,8 +158,6 @@ namespace MarsOct2020.Pages
             //click on delete cross button
             IWebElement crossbtn = Driver.driver.FindElement(By.XPath("//div[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[2]/div/div[2]/div/table/tbody[2]/tr/td[3]/span[2]/i"));
             crossbtn.Click();
-
-
         }
     }
 }
