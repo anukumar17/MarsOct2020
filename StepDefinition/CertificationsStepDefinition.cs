@@ -12,7 +12,7 @@ namespace MarsOct2020.StepDefinition
     [Binding]
     public sealed class CertificationsStepDefinition
     {
-             
+             // scenario
             [Given(@"I login to the website with valid email id and password")]
             public void GivenILoginToTheWebsiteWithValidEmailIdAndPassword()
             {

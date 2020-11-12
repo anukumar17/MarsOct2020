@@ -12,7 +12,8 @@ namespace MarsOct2020.Hooks
         [BeforeScenario]
         public void Setup()
         {
-            //Defining the browser
+            //Defining the browser 
+            // initialize the browser
             Driver driver = new Driver();
             driver.Initialize();
 

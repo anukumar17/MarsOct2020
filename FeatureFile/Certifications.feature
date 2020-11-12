@@ -1,5 +1,5 @@
 ﻿Feature: Certifications
-	As a seller
+	As a seller ....
 	I would like to add my certificates
 	@AddEditDelete
 
@@ -17,3 +17,5 @@
 	Given I Login to the website with valid credentials
 	When I try to delete existing certificate
 	When I am able to delete the exsisting certificate
+
+	#certification

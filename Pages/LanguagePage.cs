@@ -15,9 +15,10 @@ namespace MarsOct2020.Pages
         {
 
             //Identify add new language button and click on add new button
+            Wait.WaitForElementVisibility(Driver.driver, "XPath", "//div[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[2]/div/div[2]/div/table/thead/tr/th[3]/div", 10000);
             IWebElement addnewlan = Driver.driver.FindElement(By.XPath("//div[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[2]/div/div[2]/div/table/thead/tr/th[3]/div"));
             addnewlan.Click();
-            Thread.Sleep(1000);
+            //Thread.Sleep(1000);
 
             // Identify input add language text box and enter language
             IWebElement enterlan = Driver.driver.FindElement(By.Name("name"));
