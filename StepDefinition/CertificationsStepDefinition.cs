@@ -24,7 +24,7 @@ namespace MarsOct2020.StepDefinition
             public void WhenIAddCertificate()
             {
                 var addcertificate = new CertificationPage();
-                addcertificate.AddCertificate();
+            addcertificate.AddCertificate();
             }
 
             [Then(@"Seller is able to verify the certificate in the profile details")]

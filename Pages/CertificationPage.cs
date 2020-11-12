@@ -3,7 +3,7 @@ using MarsOct2020.Hooks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using System;
-
+using System.Threading;
 
 namespace MarsOct2020.Pages
 {
@@ -11,17 +11,19 @@ namespace MarsOct2020.Pages
     {
         internal void AddCertificate()
         {
-            Wait.WaitForElementVisibility(Driver.driver, "XPath", "//div[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[1]/a[4]", 10000);
+            //Wait.WaitForElementVisibility(Driver.driver, "XPath", "//div[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[1]/a[4]", 10000);
 
             //click on Certification
             IWebElement certification = Driver.driver.FindElement(By.XPath("//div[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[1]/a[4]"));
             certification.Click();
+            Thread.Sleep(1000);
 
-            Wait.WaitForElementVisibility(Driver.driver, "XPath", "//div[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/table/thead/tr/th[4]/div", 10000);
+           // Wait.WaitForElementVisibility(Driver.driver, "XPath", "//div[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/table/thead/tr/th[4]/div", 10000);
 
             //click on addnew certification
             IWebElement addCerti = Driver.driver.FindElement(By.XPath("//div[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/table/thead/tr/th[4]/div"));
             addCerti.Click();
+            Thread.Sleep(1000);
 
             //input certification
             IWebElement inputCer = Driver.driver.FindElement(By.Name("certificationName"));
@@ -49,13 +51,15 @@ namespace MarsOct2020.Pages
             //click on addnew certification
             IWebElement addCerti1 = Driver.driver.FindElement(By.XPath("//div[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/table/thead/tr/th[4]/div"));
             addCerti1.Click();
+            Thread.Sleep(1000);
 
-            Wait.WaitForElementVisibility(Driver.driver, "Name", "certificationName", 10000);
+            //Wait.WaitForElementVisibility(Driver.driver, "Name", "certificationName", 10000);
             //input second certification
             IWebElement inputCer1 = Driver.driver.FindElement(By.Name("certificationName"));
             inputCer1.Click();
             IWebElement cerName1 = Driver.driver.FindElement(By.Name("certificationName"));
             cerName1.SendKeys("Auto CADD");
+            Thread.Sleep(1000);
 
             //input certificationfrom
             IWebElement inputCerF1 = Driver.driver.FindElement(By.Name("certificationFrom"));
